@@ -3,4 +3,4 @@ project(DynamicArray C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(DynamicArray main.c DynamicArray.h DynamicArrayCPP.h)
+add_executable(DynamicArray main.c DynamicArray.h)
