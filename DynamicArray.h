@@ -114,4 +114,15 @@ bool insert(struct DynamicArray *this, int pos, int elem) {
     return true;
 }
 
+void deallocate(struct DynamicArray* this) {
+    if (this->arr == NULL) {
+        return;
+    }
+
+    free(this->arr);
+    this->arr = NULL;
+    this->capacity = 0;
+    this->size = 0;
+}
+
 #endif //DYNAMICARRAY_DYNAMICARRAY_H

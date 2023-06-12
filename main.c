@@ -42,5 +42,8 @@ int main() {
     printf("darr2 capacity: %d\n", capacity(&darr2));
     printf("darr2 empty: %d\n", empty(&darr2));
 
+    deallocate(&darr);
+    deallocate(&darr2);
+
     return 0;
 }
